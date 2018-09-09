@@ -1,24 +1,4 @@
-// Adafruit IO Analog In Example
-// Tutorial Link: https://learn.adafruit.com/adafruit-io-basics-analog-input
-//
-// Adafruit invests time and resources providing this open source code.
-// Please support Adafruit and open source hardware by purchasing
-// products from Adafruit!
-//
-// Written by Todd Treece for Adafruit Industries
-// Copyright (c) 2016 Adafruit Industries
-// Licensed under the MIT license.
-//
-// All text above must be included in any redistribution.
-
-/************************** Configuration ***********************************/
-
-// edit the config.h tab and enter your Adafruit IO credentials
-// and any additional configuration needed for WiFi, cellular,
-// or ethernet clients.
 #include "config.h"
-
-/************************ Example Starts Here *******************************/
 
 // analog pin 0
 #define TEMP A0
@@ -74,7 +54,5 @@ void loop() {
   analog->save(current);
 
   last = current;
-
-  // wait one second (1000 milliseconds == 1 second)
   delay(1000);
 }
